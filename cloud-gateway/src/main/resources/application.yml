@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cloud-gateway
+  config:
+    import: "optional:configserver:http://localhost:9999"
+  cloud:
+    gateway:
+      routes:
+        - id: employee-info
+          uri: lb://EMPLOYEE-INFO
+          predicates:
+            - Path=/employee/**
+        - id: department-info
+          uri: lb://DEPARTMENT-INFO
+          predicates:
+            - Path=/department/**
+
+server: 
+  port: 7777
