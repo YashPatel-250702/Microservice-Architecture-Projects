@@ -1,7 +1,17 @@
-spring:
-  application:
-    name: cloud_config
-  profiles:
-    active: native
 server:
   port: 9999
+
+spring:
+  application:
+    name: cloud-config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Yash-123patel/microservice-example-configuration
+          clone-on-start: true
+          default-label: main
+          searchPaths: ""  
+          force-pull: true  

@@ -34,11 +34,9 @@ public class EmployeeService {
 	@Transactional(rollbackForClassName = "java.lang.Exception")
 	public Employee saveEmployee(Employee employee) {
 		
-	   try {
+	
 			Department departmentById = departmentFeignCLient.getDepartmentById(employee.getDeptId());
-	} catch (Exception e) {
-		throw new RuntimeException("Department not found with id: "+employee.getDeptId());
-	}
+	
 		
 		return employeeRepository.save(employee);
 	}

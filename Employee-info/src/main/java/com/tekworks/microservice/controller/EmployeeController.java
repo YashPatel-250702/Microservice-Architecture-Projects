@@ -19,8 +19,12 @@ import com.tekworks.microservice.entity.Employee;
 import com.tekworks.microservice.exception.NoEmployeeFoundException;
 import com.tekworks.microservice.service.EmployeeService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/employee")
+@Slf4j
 public class EmployeeController {
 	
 	@Autowired
@@ -28,6 +32,7 @@ public class EmployeeController {
 	
 	
 	@PostMapping("/saveEmployee")
+	@CircuitBreaker(name = "departmentBreaker",fallbackMethod = "departmentFallBack")
 	public ResponseEntity<?> saveEmployee(@Validated @RequestBody Employee employee ,BindingResult result){
 		
 		try {
@@ -60,6 +65,7 @@ public class EmployeeController {
 	
 	
 	@GetMapping("/getEmployee/{id}")
+	@CircuitBreaker(name = "departmentBreaker",fallbackMethod = "departmentFallBack")
 	public ResponseEntity<?> getEmployeeById(@PathVariable Integer id) throws NoEmployeeFoundException {
 		if(id==null) {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Please Provide Valid Employee id");
@@ -68,5 +74,15 @@ public class EmployeeController {
 		  return ResponseEntity.status(HttpStatus.OK).body( employeeService.getEmployeeById(id));
 		
 		
+	}
+	
+	//creating fallback method for circuit breaker
+	public ResponseEntity<?>departmentFallBack( Employee employee, BindingResult result, Exception ex ){
+		log.info("FallBack executed , department service is down",ex.getMessage());
+		return ResponseEntity.ok("Uh-oh! The Department Service is temporarily down. We're on it—stay tuned! ");
+	}
+	public ResponseEntity<?>departmentFallBack( Integer id,Exception ex ){
+		log.info("FallBack executed , department service is down",ex.getMessage());
+		return ResponseEntity.ok("Uh-oh! The Department Service is temporarily down. We're on it—stay tuned! ");
 	}
 }
