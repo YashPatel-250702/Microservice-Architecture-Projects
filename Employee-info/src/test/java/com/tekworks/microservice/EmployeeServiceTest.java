@@ -17,7 +17,7 @@ import com.tekworks.microservice.model.Department;
 import com.tekworks.microservice.repository.EmployeeRepository;
 import com.tekworks.microservice.service.EmployeeService;
 
-@ExtendWith(MockitoExtension.class)  // Pure unit test without full Spring context
+@ExtendWith(MockitoExtension.class) 
 class EmployeeApplicationTests {
     
     @Mock  
