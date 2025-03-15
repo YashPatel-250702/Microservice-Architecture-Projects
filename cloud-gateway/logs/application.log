@@ -1,964 +1,60 @@
-2025-03-14 14:34:06 - Starting CloudGatewayApplication using Java 17.0.12 with PID 15840 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 14:34:06 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 14:34:06 - Fetching config from server at : http://localhost:9999
-2025-03-14 14:34:06 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 14:34:06 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 14:34:06 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 14:34:07 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [After]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Before]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Between]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Header]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Host]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Method]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Path]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Query]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 14:34:08 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 14:34:08 - Unable to start LiveReload server
-2025-03-14 14:34:08 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 14:34:09 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 14:34:09 - Setting initial instance status as: STARTING
-2025-03-14 14:34:09 - Initializing Eureka in region us-east-1
-2025-03-14 14:34:09 - Resolving eureka endpoints via configuration
-2025-03-14 14:34:09 - Disable delta property : false
-2025-03-14 14:34:09 - Single vip registry refresh property : null
-2025-03-14 14:34:09 - Force full registry fetch : false
-2025-03-14 14:34:09 - Application is null : false
-2025-03-14 14:34:09 - Registered Applications size is zero : true
-2025-03-14 14:34:09 - Application version is -1: true
-2025-03-14 14:34:09 - Getting all instance registry info from the eureka server
-2025-03-14 14:34:09 - The response status is 200
-2025-03-14 14:34:09 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 14:34:09 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 14:34:09 - Discovery Client initialized at timestamp 1741943049420 with initial instances count: 3
-2025-03-14 14:34:09 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 14:34:09 - Saw local status change event StatusChangeEvent [timestamp=1741943049423, current=UP, previous=STARTING]
-2025-03-14 14:34:09 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 14:34:09 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 14:34:09 - Netty started on port 7777 (http)
-2025-03-14 14:34:09 - Updating port to 7777
-2025-03-14 14:34:09 - Started CloudGatewayApplication in 5.194 seconds (process running for 6.011)
-2025-03-14 14:39:09 - Resolving eureka endpoints via configuration
-2025-03-14 14:44:09 - Resolving eureka endpoints via configuration
-2025-03-14 14:49:09 - Resolving eureka endpoints via configuration
-2025-03-14 14:54:09 - Resolving eureka endpoints via configuration
-2025-03-14 14:59:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:04:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:09:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:14:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:19:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:24:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:29:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:34:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:39:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:44:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:49:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:54:09 - Resolving eureka endpoints via configuration
-2025-03-14 15:59:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:04:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:09:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:14:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:19:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:24:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:29:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:34:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:39:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:44:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:49:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:54:09 - Resolving eureka endpoints via configuration
-2025-03-14 16:57:23 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 16:58:08 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 16:58:10 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 16:58:27 - Application shutdown requested.
-2025-03-14 16:58:27 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 16:58:27 - Saw local status change event StatusChangeEvent [timestamp=1741951707571, current=DOWN, previous=UP]
-2025-03-14 16:58:27 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 16:58:27 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 16:58:27 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 16:58:27 - Graceful shutdown complete
-2025-03-14 16:58:27 - Shutting down DiscoveryClient ...
-2025-03-14 16:58:30 - Unregistering ...
-2025-03-14 16:58:30 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 74 more
-
-2025-03-14 16:58:30 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2025-03-14 16:58:30 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 75 more
-
-2025-03-14 16:58:30 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2025-03-14 16:58:30 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - de-registration failedCannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 16:58:30 - Completed shut down of DiscoveryClient
-2025-03-14 17:00:19 - Starting CloudGatewayApplication using Java 17.0.12 with PID 5288 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 17:00:19 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 17:00:19 - Fetching config from server at : http://localhost:9999
-2025-03-14 17:00:19 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 17:00:19 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 17:00:19 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 17:00:20 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [After]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Before]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Between]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Header]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Host]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Method]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Path]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Query]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 17:00:21 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 17:00:21 - Unable to start LiveReload server
-2025-03-14 17:00:21 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 17:00:21 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 17:00:21 - Setting initial instance status as: STARTING
-2025-03-14 17:00:21 - Initializing Eureka in region us-east-1
-2025-03-14 17:00:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:00:22 - Disable delta property : false
-2025-03-14 17:00:22 - Single vip registry refresh property : null
-2025-03-14 17:00:22 - Force full registry fetch : false
-2025-03-14 17:00:22 - Application is null : false
-2025-03-14 17:00:22 - Registered Applications size is zero : true
-2025-03-14 17:00:22 - Application version is -1: true
-2025-03-14 17:00:22 - Getting all instance registry info from the eureka server
-2025-03-14 17:00:22 - The response status is 200
-2025-03-14 17:00:22 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 17:00:22 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 17:00:22 - Discovery Client initialized at timestamp 1741951822346 with initial instances count: 3
-2025-03-14 17:00:22 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 17:00:22 - Saw local status change event StatusChangeEvent [timestamp=1741951822350, current=UP, previous=STARTING]
-2025-03-14 17:00:22 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:00:22 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:00:22 - Netty started on port 7777 (http)
-2025-03-14 17:00:22 - Updating port to 7777
-2025-03-14 17:00:22 - Started CloudGatewayApplication in 5.872 seconds (process running for 6.997)
-2025-03-14 17:05:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:10:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:15:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:20:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:25:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:30:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:35:22 - Resolving eureka endpoints via configuration
-2025-03-14 17:39:12 - [b3f52080-7]  500 Server Error for HTTP POST "/employee/saveEmployee"
-io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.86.235:8084
-	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
-Error has been observed at the following site(s):
-	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
-	*__checkpoint ⇢ HTTP POST "/employee/saveEmployee" [ExceptionHandlingWebHandler]
-Original Stack Trace:
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 17:39:27 - [b3f52080-8]  500 Server Error for HTTP GET "/employee/getEmployee/2"
-io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /192.168.86.235:8084
-	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
-Error has been observed at the following site(s):
-	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
-	*__checkpoint ⇢ HTTP GET "/employee/getEmployee/2" [ExceptionHandlingWebHandler]
-Original Stack Trace:
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 17:39:59 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 17:40:08 - Application shutdown requested.
-2025-03-14 17:40:08 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 17:40:08 - Saw local status change event StatusChangeEvent [timestamp=1741954208382, current=DOWN, previous=UP]
-2025-03-14 17:40:08 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:40:08 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 17:40:08 - Graceful shutdown complete
-2025-03-14 17:40:08 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:40:08 - Shutting down DiscoveryClient ...
-2025-03-14 17:40:11 - Unregistering ...
-2025-03-14 17:40:11 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - deregister  status: 200
-2025-03-14 17:40:11 - Completed shut down of DiscoveryClient
-2025-03-14 17:40:18 - Starting CloudGatewayApplication using Java 17.0.12 with PID 10680 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 17:40:18 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 17:40:18 - Fetching config from server at : http://localhost:9999
-2025-03-14 17:40:18 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 17:40:18 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 17:40:18 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 17:40:19 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [After]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Before]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Between]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Header]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Host]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Method]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Path]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Query]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 17:40:20 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 17:40:20 - Unable to start LiveReload server
-2025-03-14 17:40:21 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 17:40:21 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 17:40:21 - Setting initial instance status as: STARTING
-2025-03-14 17:40:21 - Initializing Eureka in region us-east-1
-2025-03-14 17:40:21 - Resolving eureka endpoints via configuration
-2025-03-14 17:40:21 - Disable delta property : false
-2025-03-14 17:40:21 - Single vip registry refresh property : null
-2025-03-14 17:40:21 - Force full registry fetch : false
-2025-03-14 17:40:21 - Application is null : false
-2025-03-14 17:40:21 - Registered Applications size is zero : true
-2025-03-14 17:40:21 - Application version is -1: true
-2025-03-14 17:40:21 - Getting all instance registry info from the eureka server
-2025-03-14 17:40:21 - The response status is 200
-2025-03-14 17:40:21 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 17:40:21 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 17:40:21 - Discovery Client initialized at timestamp 1741954221611 with initial instances count: 2
-2025-03-14 17:40:21 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 17:40:21 - Saw local status change event StatusChangeEvent [timestamp=1741954221615, current=UP, previous=STARTING]
-2025-03-14 17:40:21 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:40:21 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:40:21 - Netty started on port 7777 (http)
-2025-03-14 17:40:21 - Updating port to 7777
-2025-03-14 17:40:22 - Started CloudGatewayApplication in 5.31 seconds (process running for 7.009)
-2025-03-14 17:40:31 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 17:43:16 - Application shutdown requested.
-2025-03-14 17:43:16 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 17:43:16 - Saw local status change event StatusChangeEvent [timestamp=1741954396062, current=DOWN, previous=UP]
-2025-03-14 17:43:16 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:43:16 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 17:43:16 - Graceful shutdown complete
-2025-03-14 17:43:16 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:43:16 - Shutting down DiscoveryClient ...
-2025-03-14 17:43:19 - Unregistering ...
-2025-03-14 17:43:19 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 74 more
-
-2025-03-14 17:43:19 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2025-03-14 17:43:19 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 75 more
-
-2025-03-14 17:43:19 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2025-03-14 17:43:19 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - de-registration failedCannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 17:43:19 - Completed shut down of DiscoveryClient
-2025-03-14 17:45:59 - Starting CloudGatewayApplication using Java 17.0.12 with PID 2936 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 17:46:00 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 17:46:00 - Fetching config from server at : http://localhost:9999
-2025-03-14 17:46:00 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 17:46:00 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 17:46:00 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 17:46:01 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [After]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Before]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Between]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Header]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Host]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Method]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Path]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Query]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 17:46:02 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 17:46:02 - Unable to start LiveReload server
-2025-03-14 17:46:02 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 17:46:02 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 17:46:02 - Setting initial instance status as: STARTING
-2025-03-14 17:46:02 - Initializing Eureka in region us-east-1
-2025-03-14 17:46:02 - Resolving eureka endpoints via configuration
-2025-03-14 17:46:02 - Disable delta property : false
-2025-03-14 17:46:02 - Single vip registry refresh property : null
-2025-03-14 17:46:02 - Force full registry fetch : false
-2025-03-14 17:46:02 - Application is null : false
-2025-03-14 17:46:02 - Registered Applications size is zero : true
-2025-03-14 17:46:02 - Application version is -1: true
-2025-03-14 17:46:02 - Getting all instance registry info from the eureka server
-2025-03-14 17:46:03 - The response status is 200
-2025-03-14 17:46:03 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 17:46:03 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 17:46:03 - Discovery Client initialized at timestamp 1741954563402 with initial instances count: 3
-2025-03-14 17:46:03 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 17:46:03 - Saw local status change event StatusChangeEvent [timestamp=1741954563406, current=UP, previous=STARTING]
-2025-03-14 17:46:03 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:46:03 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:46:04 - Netty started on port 7777 (http)
-2025-03-14 17:46:04 - Updating port to 7777
-2025-03-14 17:46:04 - Started CloudGatewayApplication in 7.139 seconds (process running for 8.131)
-2025-03-14 17:48:41 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 17:48:43 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 17:48:44 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 17:48:48 - Application shutdown requested.
-2025-03-14 17:48:48 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 17:48:48 - Saw local status change event StatusChangeEvent [timestamp=1741954728351, current=DOWN, previous=UP]
-2025-03-14 17:48:48 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:48:48 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 17:48:48 - Graceful shutdown complete
-2025-03-14 17:48:48 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:48:48 - Shutting down DiscoveryClient ...
-2025-03-14 17:48:51 - Unregistering ...
-2025-03-14 17:48:51 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - deregister  status: 200
-2025-03-14 17:48:51 - Completed shut down of DiscoveryClient
-2025-03-14 17:48:57 - Starting CloudGatewayApplication using Java 17.0.12 with PID 14532 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 17:48:57 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 17:48:57 - Fetching config from server at : http://localhost:9999
-2025-03-14 17:48:57 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 17:48:57 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 17:48:57 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 17:48:58 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [After]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Before]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Between]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Header]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Host]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Method]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Path]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Query]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 17:48:59 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 17:48:59 - Unable to start LiveReload server
-2025-03-14 17:48:59 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 17:49:00 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 17:49:00 - Setting initial instance status as: STARTING
-2025-03-14 17:49:00 - Initializing Eureka in region us-east-1
-2025-03-14 17:49:00 - Resolving eureka endpoints via configuration
-2025-03-14 17:49:00 - Disable delta property : false
-2025-03-14 17:49:00 - Single vip registry refresh property : null
-2025-03-14 17:49:00 - Force full registry fetch : false
-2025-03-14 17:49:00 - Application is null : false
-2025-03-14 17:49:00 - Registered Applications size is zero : true
-2025-03-14 17:49:00 - Application version is -1: true
-2025-03-14 17:49:00 - Getting all instance registry info from the eureka server
-2025-03-14 17:49:00 - The response status is 200
-2025-03-14 17:49:00 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 17:49:00 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 17:49:00 - Discovery Client initialized at timestamp 1741954740477 with initial instances count: 2
-2025-03-14 17:49:00 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 17:49:00 - Saw local status change event StatusChangeEvent [timestamp=1741954740483, current=UP, previous=STARTING]
-2025-03-14 17:49:00 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:49:00 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:49:00 - Netty started on port 7777 (http)
-2025-03-14 17:49:00 - Updating port to 7777
-2025-03-14 17:49:01 - Started CloudGatewayApplication in 5.348 seconds (process running for 6.306)
-2025-03-14 17:54:00 - Resolving eureka endpoints via configuration
-2025-03-14 17:55:06 - Application shutdown requested.
-2025-03-14 17:55:06 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 17:55:06 - Saw local status change event StatusChangeEvent [timestamp=1741955106603, current=DOWN, previous=UP]
-2025-03-14 17:55:06 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:55:06 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 17:55:06 - Graceful shutdown complete
-2025-03-14 17:55:06 - Shutting down DiscoveryClient ...
-2025-03-14 17:55:06 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": localhost:8761 failed to respond stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": localhost:8761 failed to respond
+2025-03-15 17:08:31 - Starting CloudGatewayApplication using Java 17.0.12 with PID 19100 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
+2025-03-15 17:08:31 - No active profile set, falling back to 1 default profile: "default"
+2025-03-15 17:08:31 - Fetching config from server at : http://localhost:9999
+2025-03-15 17:08:31 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
+2025-03-15 17:08:31 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-15 17:08:31 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-15 17:08:32 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [After]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Before]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Between]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Cookie]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Header]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Host]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Method]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Path]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Query]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [ReadBody]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [RemoteAddr]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [Weight]
+2025-03-15 17:08:34 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-03-15 17:08:34 - Unable to start LiveReload server
+2025-03-15 17:08:34 - Eureka HTTP Client uses RestTemplate.
+2025-03-15 17:08:34 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-15 17:08:34 - Setting initial instance status as: STARTING
+2025-03-15 17:08:34 - Initializing Eureka in region us-east-1
+2025-03-15 17:08:34 - Resolving eureka endpoints via configuration
+2025-03-15 17:08:34 - Disable delta property : false
+2025-03-15 17:08:34 - Single vip registry refresh property : null
+2025-03-15 17:08:34 - Force full registry fetch : false
+2025-03-15 17:08:34 - Application is null : false
+2025-03-15 17:08:34 - Registered Applications size is zero : true
+2025-03-15 17:08:34 - Application version is -1: true
+2025-03-15 17:08:34 - Getting all instance registry info from the eureka server
+2025-03-15 17:08:35 - The response status is 200
+2025-03-15 17:08:35 - Starting heartbeat executor: renew interval is: 30
+2025-03-15 17:08:35 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-15 17:08:35 - Discovery Client initialized at timestamp 1742038715027 with initial instances count: 3
+2025-03-15 17:08:35 - Registering application CLOUD-GATEWAY with eureka with status UP
+2025-03-15 17:08:35 - Saw local status change event StatusChangeEvent [timestamp=1742038715032, current=UP, previous=STARTING]
+2025-03-15 17:08:35 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
+2025-03-15 17:08:35 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
+2025-03-15 17:08:35 - Netty started on port 7777 (http)
+2025-03-15 17:08:35 - Updating port to 7777
+2025-03-15 17:08:35 - Started CloudGatewayApplication in 5.662 seconds (process running for 6.467)
+2025-03-15 17:13:34 - Resolving eureka endpoints via configuration
+2025-03-15 17:18:34 - Resolving eureka endpoints via configuration
+2025-03-15 17:23:34 - Resolving eureka endpoints via configuration
+2025-03-15 17:28:34 - Resolving eureka endpoints via configuration
+2025-03-15 17:29:57 - Application shutdown requested.
+2025-03-15 17:29:57 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
+2025-03-15 17:29:57 - Saw local status change event StatusChangeEvent [timestamp=1742039997943, current=DOWN, previous=UP]
+2025-03-15 17:29:57 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
+2025-03-15 17:29:57 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-15 17:29:57 - Graceful shutdown complete
+2025-03-15 17:29:57 - Shutting down DiscoveryClient ...
+2025-03-15 17:29:57 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": localhost:8761 failed to respond stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": localhost:8761 failed to respond
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -1016,8 +112,8 @@ Caused by: org.apache.hc.core5.http.NoHttpResponseException: localhost:8761 fail
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 21 more
 
-2025-03-14 17:55:06 - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": localhost:8761 failed to respond
-2025-03-14 17:55:06 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": Connection reset stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": Connection reset
+2025-03-15 17:29:57 - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": localhost:8761 failed to respond
+2025-03-15 17:29:58 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": Connection reset stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": Connection reset
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -1084,8 +180,8 @@ Caused by: java.net.SocketException: Connection reset
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 22 more
 
-2025-03-14 17:55:06 - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": Connection reset
-2025-03-14 17:55:06 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration failed Cannot execute request on any known server
+2025-03-15 17:29:58 - Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY": Connection reset
+2025-03-15 17:29:58 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration failed Cannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -1101,7 +197,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 17:55:06 - There was a problem with the instance info replicator
+2025-03-15 17:29:58 - There was a problem with the instance info replicator
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
@@ -1117,8 +213,8 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 17:55:06 - Unregistering ...
-2025-03-14 17:55:06 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2025-03-15 17:29:58 - Unregistering ...
+2025-03-15 17:29:58 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
 	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
 	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
@@ -1233,8 +329,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
 	... 75 more
 
-2025-03-14 17:55:06 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2025-03-14 17:55:06 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - de-registration failedCannot execute request on any known server
+2025-03-15 17:29:58 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
+2025-03-15 17:29:58 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - de-registration failedCannot execute request on any known server
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
 	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
@@ -1303,587 +399,105 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 17:55:06 - Completed shut down of DiscoveryClient
-2025-03-14 17:57:16 - Starting CloudGatewayApplication using Java 17.0.12 with PID 1452 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 17:57:16 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 17:57:16 - Fetching config from server at : http://localhost:9999
-2025-03-14 17:57:16 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 17:57:16 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 17:57:16 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 17:57:17 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [After]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Before]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Between]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Header]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Host]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Method]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Path]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Query]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 17:57:18 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 17:57:19 - Unable to start LiveReload server
-2025-03-14 17:57:19 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 17:57:19 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 17:57:19 - Setting initial instance status as: STARTING
-2025-03-14 17:57:19 - Initializing Eureka in region us-east-1
-2025-03-14 17:57:19 - Resolving eureka endpoints via configuration
-2025-03-14 17:57:19 - Disable delta property : false
-2025-03-14 17:57:19 - Single vip registry refresh property : null
-2025-03-14 17:57:19 - Force full registry fetch : false
-2025-03-14 17:57:19 - Application is null : false
-2025-03-14 17:57:19 - Registered Applications size is zero : true
-2025-03-14 17:57:19 - Application version is -1: true
-2025-03-14 17:57:19 - Getting all instance registry info from the eureka server
-2025-03-14 17:57:19 - The response status is 200
-2025-03-14 17:57:19 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 17:57:19 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 17:57:19 - Discovery Client initialized at timestamp 1741955239778 with initial instances count: 0
-2025-03-14 17:57:19 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 17:57:19 - Saw local status change event StatusChangeEvent [timestamp=1741955239784, current=UP, previous=STARTING]
-2025-03-14 17:57:19 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:57:19 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:57:19 - Netty started on port 7777 (http)
-2025-03-14 17:57:20 - Updating port to 7777
-2025-03-14 17:57:20 - Started CloudGatewayApplication in 5.492 seconds (process running for 6.588)
-2025-03-14 17:57:25 - Application shutdown requested.
-2025-03-14 17:57:25 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 17:57:25 - Saw local status change event StatusChangeEvent [timestamp=1741955245347, current=DOWN, previous=UP]
-2025-03-14 17:57:25 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:57:25 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 17:57:25 - Graceful shutdown complete
-2025-03-14 17:57:25 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:57:25 - Shutting down DiscoveryClient ...
-2025-03-14 17:57:28 - Unregistering ...
-2025-03-14 17:57:28 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - deregister  status: 200
-2025-03-14 17:57:28 - Completed shut down of DiscoveryClient
-2025-03-14 17:57:43 - Starting CloudGatewayApplication using Java 17.0.12 with PID 3088 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 17:57:43 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 17:57:43 - Fetching config from server at : http://localhost:9999
-2025-03-14 17:57:43 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 17:57:43 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 17:57:43 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 17:57:44 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [After]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Before]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Between]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Header]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Host]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Method]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Path]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Query]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 17:57:45 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 17:57:45 - Unable to start LiveReload server
-2025-03-14 17:57:46 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 17:57:46 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 17:57:46 - Setting initial instance status as: STARTING
-2025-03-14 17:57:46 - Initializing Eureka in region us-east-1
-2025-03-14 17:57:46 - Resolving eureka endpoints via configuration
-2025-03-14 17:57:46 - Disable delta property : false
-2025-03-14 17:57:46 - Single vip registry refresh property : null
-2025-03-14 17:57:46 - Force full registry fetch : false
-2025-03-14 17:57:46 - Application is null : false
-2025-03-14 17:57:46 - Registered Applications size is zero : true
-2025-03-14 17:57:46 - Application version is -1: true
-2025-03-14 17:57:46 - Getting all instance registry info from the eureka server
-2025-03-14 17:57:46 - The response status is 200
-2025-03-14 17:57:46 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 17:57:46 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 17:57:46 - Discovery Client initialized at timestamp 1741955266811 with initial instances count: 2
-2025-03-14 17:57:46 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 17:57:46 - Saw local status change event StatusChangeEvent [timestamp=1741955266815, current=UP, previous=STARTING]
-2025-03-14 17:57:46 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:57:46 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:57:47 - Netty started on port 7777 (http)
-2025-03-14 17:57:47 - Updating port to 7777
-2025-03-14 17:57:47 - Started CloudGatewayApplication in 5.375 seconds (process running for 6.336)
-2025-03-14 17:58:02 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 17:58:07 - Application shutdown requested.
-2025-03-14 17:58:07 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 17:58:07 - Saw local status change event StatusChangeEvent [timestamp=1741955287858, current=DOWN, previous=UP]
-2025-03-14 17:58:07 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:58:07 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 17:58:07 - Graceful shutdown complete
-2025-03-14 17:58:07 - Shutting down DiscoveryClient ...
-2025-03-14 17:58:07 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:58:07 - Unregistering ...
-2025-03-14 17:58:07 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - deregister  status: 200
-2025-03-14 17:58:07 - Completed shut down of DiscoveryClient
-2025-03-14 17:58:15 - Starting CloudGatewayApplication using Java 17.0.12 with PID 12932 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 17:58:15 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 17:58:15 - Fetching config from server at : http://localhost:9999
-2025-03-14 17:58:15 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 17:58:15 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 17:58:15 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 17:58:17 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [After]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Before]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Between]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Header]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Host]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Method]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Path]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Query]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 17:58:17 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 17:58:18 - Unable to start LiveReload server
-2025-03-14 17:58:18 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 17:58:18 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 17:58:18 - Setting initial instance status as: STARTING
-2025-03-14 17:58:18 - Initializing Eureka in region us-east-1
-2025-03-14 17:58:18 - Resolving eureka endpoints via configuration
-2025-03-14 17:58:18 - Disable delta property : false
-2025-03-14 17:58:18 - Single vip registry refresh property : null
-2025-03-14 17:58:18 - Force full registry fetch : false
-2025-03-14 17:58:18 - Application is null : false
-2025-03-14 17:58:18 - Registered Applications size is zero : true
-2025-03-14 17:58:18 - Application version is -1: true
-2025-03-14 17:58:18 - Getting all instance registry info from the eureka server
-2025-03-14 17:58:18 - The response status is 200
-2025-03-14 17:58:18 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 17:58:18 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 17:58:18 - Discovery Client initialized at timestamp 1741955298917 with initial instances count: 4
-2025-03-14 17:58:18 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 17:58:18 - Saw local status change event StatusChangeEvent [timestamp=1741955298922, current=UP, previous=STARTING]
-2025-03-14 17:58:18 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 17:58:18 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 17:58:19 - Netty started on port 7777 (http)
-2025-03-14 17:58:19 - Updating port to 7777
-2025-03-14 17:58:19 - Started CloudGatewayApplication in 5.345 seconds (process running for 6.374)
-2025-03-14 18:00:40 - Application shutdown requested.
-2025-03-14 18:00:40 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 18:00:40 - Saw local status change event StatusChangeEvent [timestamp=1741955440279, current=DOWN, previous=UP]
-2025-03-14 18:00:40 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 18:00:40 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 18:00:40 - Graceful shutdown complete
-2025-03-14 18:00:40 - Shutting down DiscoveryClient ...
-2025-03-14 18:00:40 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 18:00:40 - Unregistering ...
-2025-03-14 18:00:40 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - deregister  status: 200
-2025-03-14 18:00:40 - Completed shut down of DiscoveryClient
-2025-03-14 18:01:26 - Starting CloudGatewayApplication using Java 17.0.12 with PID 15840 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 18:01:26 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 18:01:26 - Fetching config from server at : http://localhost:9999
-2025-03-14 18:01:26 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 18:01:26 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 18:01:26 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 18:01:27 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [After]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Before]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Between]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Header]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Host]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Method]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Path]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Query]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 18:01:28 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 18:01:28 - Unable to start LiveReload server
-2025-03-14 18:01:29 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 18:01:29 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 18:01:29 - Setting initial instance status as: STARTING
-2025-03-14 18:01:29 - Initializing Eureka in region us-east-1
-2025-03-14 18:01:29 - Resolving eureka endpoints via configuration
-2025-03-14 18:01:29 - Disable delta property : false
-2025-03-14 18:01:29 - Single vip registry refresh property : null
-2025-03-14 18:01:29 - Force full registry fetch : false
-2025-03-14 18:01:29 - Application is null : false
-2025-03-14 18:01:29 - Registered Applications size is zero : true
-2025-03-14 18:01:29 - Application version is -1: true
-2025-03-14 18:01:29 - Getting all instance registry info from the eureka server
-2025-03-14 18:01:29 - The response status is 200
-2025-03-14 18:01:29 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 18:01:29 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 18:01:29 - Discovery Client initialized at timestamp 1741955489629 with initial instances count: 1
-2025-03-14 18:01:29 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 18:01:29 - Saw local status change event StatusChangeEvent [timestamp=1741955489632, current=UP, previous=STARTING]
-2025-03-14 18:01:29 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 18:01:29 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 18:01:29 - Netty started on port 7777 (http)
-2025-03-14 18:01:29 - Updating port to 7777
-2025-03-14 18:01:30 - Started CloudGatewayApplication in 5.166 seconds (process running for 6.079)
-2025-03-14 18:01:42 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 18:01:47 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 18:01:48 - No servers available for service: EMPLOYEE-INFO
-2025-03-14 18:01:52 - Application shutdown requested.
-2025-03-14 18:01:52 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 18:01:52 - Saw local status change event StatusChangeEvent [timestamp=1741955512706, current=DOWN, previous=UP]
-2025-03-14 18:01:52 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 18:01:52 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 18:01:52 - Graceful shutdown complete
-2025-03-14 18:01:52 - Shutting down DiscoveryClient ...
-2025-03-14 18:01:52 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 18:01:52 - Unregistering ...
-2025-03-14 18:01:52 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - deregister  status: 200
-2025-03-14 18:01:52 - Completed shut down of DiscoveryClient
-2025-03-14 18:01:59 - Starting CloudGatewayApplication using Java 17.0.12 with PID 5708 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
-2025-03-14 18:01:59 - No active profile set, falling back to 1 default profile: "default"
-2025-03-14 18:01:59 - Fetching config from server at : http://localhost:9999
-2025-03-14 18:01:59 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
-2025-03-14 18:01:59 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-14 18:01:59 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-14 18:02:00 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [After]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Before]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Between]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Cookie]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Header]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Host]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Method]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Path]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Query]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [ReadBody]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [RemoteAddr]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [Weight]
-2025-03-14 18:02:01 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2025-03-14 18:02:01 - Unable to start LiveReload server
-2025-03-14 18:02:01 - Eureka HTTP Client uses RestTemplate.
-2025-03-14 18:02:01 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-03-14 18:02:01 - Setting initial instance status as: STARTING
-2025-03-14 18:02:01 - Initializing Eureka in region us-east-1
-2025-03-14 18:02:01 - Resolving eureka endpoints via configuration
-2025-03-14 18:02:01 - Disable delta property : false
-2025-03-14 18:02:01 - Single vip registry refresh property : null
-2025-03-14 18:02:01 - Force full registry fetch : false
-2025-03-14 18:02:01 - Application is null : false
-2025-03-14 18:02:01 - Registered Applications size is zero : true
-2025-03-14 18:02:01 - Application version is -1: true
-2025-03-14 18:02:01 - Getting all instance registry info from the eureka server
-2025-03-14 18:02:02 - The response status is 200
-2025-03-14 18:02:02 - Starting heartbeat executor: renew interval is: 30
-2025-03-14 18:02:02 - InstanceInfoReplicator onDemand update allowed rate per min is 4
-2025-03-14 18:02:02 - Discovery Client initialized at timestamp 1741955522196 with initial instances count: 2
-2025-03-14 18:02:02 - Registering application CLOUD-GATEWAY with eureka with status UP
-2025-03-14 18:02:02 - Saw local status change event StatusChangeEvent [timestamp=1741955522200, current=UP, previous=STARTING]
-2025-03-14 18:02:02 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 18:02:02 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 18:02:02 - Netty started on port 7777 (http)
-2025-03-14 18:02:02 - Updating port to 7777
-2025-03-14 18:02:02 - Started CloudGatewayApplication in 5.14 seconds (process running for 6.045)
-2025-03-14 18:05:12 - Application shutdown requested.
-2025-03-14 18:05:12 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
-2025-03-14 18:05:12 - Saw local status change event StatusChangeEvent [timestamp=1741955712531, current=DOWN, previous=UP]
-2025-03-14 18:05:12 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
-2025-03-14 18:05:12 - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-14 18:05:12 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
-2025-03-14 18:05:12 - Graceful shutdown complete
-2025-03-14 18:05:12 - Shutting down DiscoveryClient ...
-2025-03-14 18:05:15 - Unregistering ...
-2025-03-14 18:05:15 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 74 more
-
-2025-03-14 18:05:15 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2025-03-14 18:05:15 - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:216)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:174)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
-	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
-	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
-	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$3(RestTemplateTransportClientFactory.java:141)
-	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
-	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
-	... 75 more
-
-2025-03-14 18:05:15 - Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777": Connect to http://localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information
-2025-03-14 18:05:15 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - de-registration failedCannot execute request on any known server
-com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
-	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
-	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
-	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
-	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:686)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:643)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1368)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:602)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1361)
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:149)
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
-	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
-	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
-	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
-	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
-	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
-	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
-	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
-	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-03-14 18:05:15 - Completed shut down of DiscoveryClient
+2025-03-15 17:29:58 - Completed shut down of DiscoveryClient
+2025-03-15 17:31:08 - Starting CloudGatewayApplication using Java 17.0.12 with PID 20084 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
+2025-03-15 17:31:08 - No active profile set, falling back to 1 default profile: "default"
+2025-03-15 17:31:08 - Fetching config from server at : http://localhost:9999
+2025-03-15 17:31:08 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
+2025-03-15 17:31:08 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-15 17:31:08 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-15 17:31:09 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [After]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Before]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Between]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Cookie]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Header]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Host]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Method]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Path]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Query]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [ReadBody]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [RemoteAddr]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [Weight]
+2025-03-15 17:31:10 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-03-15 17:31:10 - Unable to start LiveReload server
+2025-03-15 17:31:10 - Eureka HTTP Client uses RestTemplate.
+2025-03-15 17:31:11 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-15 17:31:11 - Setting initial instance status as: STARTING
+2025-03-15 17:31:11 - Initializing Eureka in region us-east-1
+2025-03-15 17:31:11 - Resolving eureka endpoints via configuration
+2025-03-15 17:31:11 - Disable delta property : false
+2025-03-15 17:31:11 - Single vip registry refresh property : null
+2025-03-15 17:31:11 - Force full registry fetch : false
+2025-03-15 17:31:11 - Application is null : false
+2025-03-15 17:31:11 - Registered Applications size is zero : true
+2025-03-15 17:31:11 - Application version is -1: true
+2025-03-15 17:31:11 - Getting all instance registry info from the eureka server
+2025-03-15 17:31:11 - The response status is 200
+2025-03-15 17:31:11 - Starting heartbeat executor: renew interval is: 30
+2025-03-15 17:31:11 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-15 17:31:11 - Discovery Client initialized at timestamp 1742040071494 with initial instances count: 2
+2025-03-15 17:31:11 - Registering application CLOUD-GATEWAY with eureka with status UP
+2025-03-15 17:31:11 - Saw local status change event StatusChangeEvent [timestamp=1742040071499, current=UP, previous=STARTING]
+2025-03-15 17:31:11 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
+2025-03-15 17:31:11 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
+2025-03-15 17:31:11 - Netty started on port 7777 (http)
+2025-03-15 17:31:11 - Updating port to 7777
+2025-03-15 17:31:12 - Started CloudGatewayApplication in 5.822 seconds (process running for 6.77)
+2025-03-15 17:31:46 - Application shutdown requested.
+2025-03-15 17:31:46 - Unregistering application CLOUD-GATEWAY with eureka with status DOWN
+2025-03-15 17:31:46 - Saw local status change event StatusChangeEvent [timestamp=1742040106797, current=DOWN, previous=UP]
+2025-03-15 17:31:46 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
+2025-03-15 17:31:46 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-15 17:31:46 - Graceful shutdown complete
+2025-03-15 17:31:46 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
+2025-03-15 17:31:46 - Shutting down DiscoveryClient ...
+2025-03-15 17:31:49 - Unregistering ...
+2025-03-15 17:31:49 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - deregister  status: 200
+2025-03-15 17:31:49 - Completed shut down of DiscoveryClient
+2025-03-15 17:31:57 - Starting CloudGatewayApplication using Java 17.0.12 with PID 16208 (C:\Yash Folders\microservices-Architecture-main\cloud-gateway\target\classes started by Yashpatel in C:\Yash Folders\microservices-Architecture-main\cloud-gateway)
+2025-03-15 17:31:57 - No active profile set, falling back to 1 default profile: "default"
+2025-03-15 17:31:57 - Fetching config from server at : http://localhost:9999
+2025-03-15 17:31:57 - Located environment: name=cloud-gateway, profiles=[default], label=null, version=fdfef869fb4f8020aee71737d39fed93c58e1ff1, state=
+2025-03-15 17:31:57 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-15 17:31:57 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-15 17:31:58 - BeanFactory id=3540520f-acc8-3da7-94b2-28785c1b3947
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [After]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Before]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Between]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Cookie]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Header]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Host]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Method]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Path]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Query]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [ReadBody]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [RemoteAddr]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [Weight]
+2025-03-15 17:31:59 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-03-15 17:31:59 - Unable to start LiveReload server
+2025-03-15 17:31:59 - Eureka HTTP Client uses RestTemplate.
+2025-03-15 17:31:59 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-15 17:31:59 - Setting initial instance status as: STARTING
+2025-03-15 17:31:59 - Initializing Eureka in region us-east-1
+2025-03-15 17:31:59 - Resolving eureka endpoints via configuration
+2025-03-15 17:31:59 - Disable delta property : false
+2025-03-15 17:31:59 - Single vip registry refresh property : null
+2025-03-15 17:31:59 - Force full registry fetch : false
+2025-03-15 17:31:59 - Application is null : false
+2025-03-15 17:31:59 - Registered Applications size is zero : true
+2025-03-15 17:31:59 - Application version is -1: true
+2025-03-15 17:31:59 - Getting all instance registry info from the eureka server
+2025-03-15 17:31:59 - The response status is 200
+2025-03-15 17:31:59 - Starting heartbeat executor: renew interval is: 30
+2025-03-15 17:31:59 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-15 17:31:59 - Discovery Client initialized at timestamp 1742040119881 with initial instances count: 4
+2025-03-15 17:31:59 - Registering application CLOUD-GATEWAY with eureka with status UP
+2025-03-15 17:31:59 - Saw local status change event StatusChangeEvent [timestamp=1742040119884, current=UP, previous=STARTING]
+2025-03-15 17:31:59 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777: registering service...
+2025-03-15 17:31:59 - DiscoveryClient_CLOUD-GATEWAY/SYMPLT1017.lan:cloud-gateway:7777 - registration status: 204
+2025-03-15 17:32:00 - Netty started on port 7777 (http)
+2025-03-15 17:32:00 - Updating port to 7777
+2025-03-15 17:32:00 - Started CloudGatewayApplication in 4.833 seconds (process running for 5.683)

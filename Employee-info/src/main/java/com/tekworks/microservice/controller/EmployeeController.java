@@ -20,6 +20,7 @@ import com.tekworks.microservice.exception.NoEmployeeFoundException;
 import com.tekworks.microservice.service.EmployeeService;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -63,10 +64,14 @@ public class EmployeeController {
 		}
 	}
 	
+	Integer retryCount=1;
 	
 	@GetMapping("/getEmployee/{id}")
-	@CircuitBreaker(name = "departmentBreaker",fallbackMethod = "departmentFallBack")
+	//@CircuitBreaker(name = "departmentBreaker",fallbackMethod = "departmentFallBack")
+	@Retry(name = "departmentRetry",fallbackMethod = "departmentFallBack")
 	public ResponseEntity<?> getEmployeeById(@PathVariable Integer id) throws NoEmployeeFoundException {
+	
+		log.info("Retry COunt: "+retryCount++);
 		if(id==null) {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Please Provide Valid Employee id");
 		}

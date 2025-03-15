@@ -24,8 +24,14 @@ resilience4j:
         event-consumer-buffer-size: 10
         failureRateThreshold: 50
         minimumNumberOfCalls: 5
-        automaticTransitionFromOpenToHalfOpenEnabled: true 
-        waitDurationInOpenState: 5s  
-        permittedNumberOfCallsInHalfOpenState: 2 
-        slidingWindowSize: 10  
-        slidingWindowType: COUNT_BASED  
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 5s
+        permittedNumberOfCallsInHalfOpenState: 2
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
+
+  retry:
+    instances:
+      departmentRetry:
+        max-attempts: 3
+        wait-duration: 5s
