@@ -20,4 +20,13 @@ public class GlobalExceptionHandler {
         error.setExceptionTime(LocalTime.now().toString());
         return new ResponseEntity<Error>(error,HttpStatus.NOT_FOUND);
 	}
+	
+	@ExceptionHandler(ServiceUnavailableException.class)
+    public ResponseEntity<Error> handleServiceUnavailableException(ServiceUnavailableException ex) {
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(new Error(
+                ex.getMessage(),
+                LocalDate.now().toString(),
+                LocalTime.now().toString()
+        ));
+    }
 }
