@@ -3,6 +3,7 @@ package com.tekworks.microservice.response;
 import org.springframework.stereotype.Component;
 
 import com.tekworks.microservice.entity.Employee;
+import com.tekworks.microservice.model.Address;
 import com.tekworks.microservice.model.Department;
 
 import lombok.AllArgsConstructor;
@@ -16,5 +17,6 @@ import lombok.NoArgsConstructor;
 public class EmployeeResponse {
 	private Employee emp;
 	private Department dept;
+	private Address address;
 
 }

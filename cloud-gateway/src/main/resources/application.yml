@@ -1,8 +1,6 @@
 spring:
   application:
     name: cloud-gateway
-  config:
-    import: "optional:configserver:http://localhost:9999"
   cloud:
     gateway:
       routes:
