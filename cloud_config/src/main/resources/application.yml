@@ -13,5 +13,3 @@ spring:
           uri: https://github.com/Yash-123patel/microservice-example-configuration
           clone-on-start: true
           default-label: main
-          searchPaths: ""  
-          force-pull: true  

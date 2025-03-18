@@ -14,6 +14,10 @@ spring:
           uri: lb://DEPARTMENT-INFO
           predicates:
             - Path=/department/**
+        - id: address-info
+          uri: lb://ADDRESS-INFO
+          predicates:
+            - Path=/address/**
 
 server: 
   port: 7777

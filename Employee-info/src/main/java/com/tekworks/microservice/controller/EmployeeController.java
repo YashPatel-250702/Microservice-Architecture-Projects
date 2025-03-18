@@ -6,8 +6,6 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,9 +17,7 @@ import com.tekworks.microservice.entity.Employee;
 import com.tekworks.microservice.exception.NoEmployeeFoundException;
 import com.tekworks.microservice.service.EmployeeService;
 
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
-import io.github.resilience4j.retry.annotation.Retry;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -34,20 +30,9 @@ public class EmployeeController {
 	
 	
 	@PostMapping("/saveEmployee")
-	public ResponseEntity<?> saveEmployee(@Validated @RequestBody Employee employee ,BindingResult result){
+	public ResponseEntity<?> saveEmployee(@Valid @RequestBody Employee employee ){
 		
-		try {
-			if(result.hasErrors()) {
-				Map<String, String> errors = new LinkedHashMap<>();
-				result.getFieldErrors().forEach(fieldError -> {
-					String fieldName = fieldError.getField();
-					String errorMessage = fieldError.getDefaultMessage();
-					errors.put(fieldName, errorMessage);
-				});
-				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errors);
-				
-			}
-			
+		try {		
 			Employee saveEmployee = employeeService.saveEmployee(employee);
 			if(saveEmployee==null) {
 				throw new RuntimeException();

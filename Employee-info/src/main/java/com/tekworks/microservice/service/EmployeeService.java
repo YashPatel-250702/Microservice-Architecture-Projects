@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.tekworks.microservice.entity.Employee;
 import com.tekworks.microservice.exception.NoEmployeeFoundException;
@@ -25,7 +26,7 @@ public class EmployeeService {
     @Autowired
     private DepartmentFeignCLient departmentFeignCLient;
 
-    
+	@Transactional(rollbackForClassName = "java.lang.Exception")
     public Employee saveEmployee(Employee employee) {
         return employeeRepository.save(employee);
     }

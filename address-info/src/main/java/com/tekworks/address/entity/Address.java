@@ -1,4 +1,4 @@
-package com.tekworks.department.entity;
+package com.tekworks.address.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,16 +13,22 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Department {
+public class Address {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@NotBlank(message = "Please Provide Valid Department Name")
-	private String name;
+	@NotBlank(message =  "Country is required")
+	private String country;
 	
-	@NotBlank(message = "Please Provide Valid Department Address")
-	private String address;
+	@NotBlank( message = "Address is required")
+	private String state;
+	
+	@NotBlank(message = "City is required")
+	private String city;
+	
+	@NotBlank(message = "HouseNo is required")
+	private String houseNo;
 
 }

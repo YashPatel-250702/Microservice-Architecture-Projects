@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tekworks.department.entity.Department;
 import com.tekworks.department.service.DepartmentService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/department")
 public class DepartmentController {
@@ -27,18 +28,9 @@ public class DepartmentController {
 	
 	
 	@PostMapping("/saveDepartment")
-	public ResponseEntity<Object> saveDepartment(@Validated @RequestBody Department department,BindingResult bindingResult){
+	public ResponseEntity<Object> saveDepartment(@Valid @RequestBody Department department){
 		
 		try {
-			if(bindingResult.hasErrors()) {
-				
-				Map<String ,String> errors=new HashMap<>();
-				
-				bindingResult.getFieldErrors().forEach(err->
-				          errors.put(err.getField(),err.getDefaultMessage()));
-				
-				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errors);
-			}
 			
 			Department saveDepartment = departmentService.saveDepartment(department);
 			if(saveDepartment==null) {
@@ -47,8 +39,11 @@ public class DepartmentController {
 			return ResponseEntity.status(HttpStatus.OK).body("Departmnet Information Saved Successfully");
 			
 			
-		} catch (Exception e) {
+		}catch (RuntimeException e) {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+		} 
+		catch (Exception e) {
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal Server Error");
 		}
 	}
 
