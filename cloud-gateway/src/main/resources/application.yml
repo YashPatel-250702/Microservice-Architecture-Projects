@@ -16,6 +16,16 @@ spring:
           uri: lb://ADDRESS-INFO
           predicates:
             - Path=/address/**
-
-server: 
+  
+server:
   port: 7777
+
+# Okta OAuth2 Configuration
+okta:
+  oauth2:
+    issuer: https://dev-98542581.okta.com/oauth2/default
+    audience: api://default
+    client-id: 0oanwp3vluL35pCWE5d7
+    client-secret: kri3JQRqmWSRPtsWCOCth7QczK2YcFEkPJOhooFPAiLM0vqKVJ1_bbu5wJ7itscJ
+    scopes: openid, profile, email, offline_access
+    issuer-uri: https://dev-98542581.okta.com/oauth2/default
