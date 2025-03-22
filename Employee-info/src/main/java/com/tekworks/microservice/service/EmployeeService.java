@@ -64,16 +64,19 @@ public class EmployeeService {
 
    
     public EmployeeResponse departmentAddressFallBack(Integer id, Exception ex) {
+    	ex.printStackTrace();
         throw new ServiceUnavailableException(" Service is down. Please try again later.");
     }
 
    
     public EmployeeResponse retryDepartmentAddressFallBack(Integer id, Exception ex) {
+    	ex.printStackTrace();
         throw new ServiceUnavailableException("Temporary issue, please try again after some time.");
     }
 
    
     public EmployeeResponse rateLimiterDepartmentAddressFallBack(Integer id, Exception ex) {
+    	ex.printStackTrace();
         throw new ServiceUnavailableException("Too many requests. Please wait and try again.");
     }
 }

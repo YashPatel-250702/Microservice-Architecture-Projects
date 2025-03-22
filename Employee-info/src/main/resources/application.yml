@@ -15,7 +15,7 @@ spring:
           my-client:
             provider: okta
             authorization-grant-type: client-credentials
-            scope: internal
+            scope: Internal
             client-id: 0oanwp3vluL35pCWE5d7
             client-secret: kri3JQRqmWSRPtsWCOCth7QczK2YcFEkPJOhooFPAiLM0vqKVJ1_bbu5wJ7itscJ
         provider:
