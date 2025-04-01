@@ -3,7 +3,3 @@ spring:
     name: department-info
   config:
     import: optional:configserver:http://localhost:9999
-okta:
-  oauth2:
-    issuer: https://dev-98542581.okta.com/oauth2/default
-    audience: api://default

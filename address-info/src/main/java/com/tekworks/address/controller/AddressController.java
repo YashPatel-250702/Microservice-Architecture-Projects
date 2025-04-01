@@ -3,7 +3,6 @@ package com.tekworks.address.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +22,6 @@ public class AddressController {
 	@Autowired
 	private AddressService addressService;
 	
-	@PreAuthorize("hasAuthority('Admin')")
 	@PostMapping("/saveAddress")
 	public ResponseEntity<?> saveAddress(@Valid @RequestBody Address address ){
 		try {
@@ -40,7 +38,7 @@ public class AddressController {
 		}
 	}
 	
-	//@PreAuthorize("hasAuthority('Admin') || hasAuthority('SCOPE_internal')")
+
 	@GetMapping("/getAddressById/{id}")
 	public ResponseEntity<?> getAddressById(@PathVariable Integer id){
 		try {

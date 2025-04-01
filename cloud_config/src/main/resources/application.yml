@@ -3,9 +3,7 @@ server:
 
 spring:
   application:
-    name: cloud-config-server
-  profiles:
-    active: git
+    name: cloud-config
   cloud:
     config:
       server:

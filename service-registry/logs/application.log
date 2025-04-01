@@ -1,0 +1,138 @@
+2025-04-01 16:40:22 - Starting ServiceRegistryApplication using Java 17.0.12 with PID 13476 (C:\Yash Patel\Microservice-workspace\microservices-Architecture\service-registry\target\classes started by Patel in C:\Yash Patel\Microservice-workspace\microservices-Architecture\service-registry)
+2025-04-01 16:40:22 - No active profile set, falling back to 1 default profile: "default"
+2025-04-01 16:40:22 - Fetching config from server at : http://localhost:9999
+2025-04-01 16:40:22 - Located environment: name=service-registry, profiles=[default], label=null, version=ad5ba516fb144a617de1b89c37448b74edd4e00e, state=
+2025-04-01 16:40:22 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-01 16:40:22 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-01 16:40:24 - BeanFactory id=ce3c3471-8632-38a6-9d87-f58adc8750b4
+2025-04-01 16:40:24 - Tomcat initialized with port 8083 (http)
+2025-04-01 16:40:24 - Starting service [Tomcat]
+2025-04-01 16:40:24 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-01 16:40:24 - Initializing Spring embedded WebApplicationContext
+2025-04-01 16:40:24 - Root WebApplicationContext: initialization completed in 1504 ms
+2025-04-01 16:40:25 - Using JSON encoding codec LegacyJacksonJson
+2025-04-01 16:40:25 - Using JSON decoding codec LegacyJacksonJson
+2025-04-01 16:40:25 - Using XML encoding codec XStreamXml
+2025-04-01 16:40:25 - Using XML decoding codec XStreamXml
+2025-04-01 16:40:25 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-04-01 16:40:26 - LiveReload server is running on port 35729
+2025-04-01 16:40:26 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-01 16:40:26 - Setting initial instance status as: STARTING
+2025-04-01 16:40:26 - Initializing Eureka in region us-east-1
+2025-04-01 16:40:26 - Client configured to neither register nor query for data.
+2025-04-01 16:40:26 - Discovery Client initialized at timestamp 1743505826931 with initial instances count: 0
+2025-04-01 16:40:26 - Initializing ...
+2025-04-01 16:40:26 - Adding new peer nodes [http://localhost:8761/eureka/]
+2025-04-01 16:40:27 - Using JSON encoding codec LegacyJacksonJson
+2025-04-01 16:40:27 - Using JSON decoding codec LegacyJacksonJson
+2025-04-01 16:40:27 - Using XML encoding codec XStreamXml
+2025-04-01 16:40:27 - Using XML decoding codec XStreamXml
+2025-04-01 16:40:27 - Replica node URL:  http://localhost:8761/eureka/
+2025-04-01 16:40:27 - Finished initializing remote region registries. All known remote regions: []
+2025-04-01 16:40:27 - Initialized
+2025-04-01 16:40:27 - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-01 16:40:27 - Registering application SERVICE-REGISTRY with eureka with status UP
+2025-04-01 16:40:27 - isAws returned false
+2025-04-01 16:40:27 - Initialized server context
+2025-04-01 16:40:27 - Got 1 instances from neighboring DS node
+2025-04-01 16:40:27 - Renew threshold is: 1
+2025-04-01 16:40:27 - Changing status to UP
+2025-04-01 16:40:27 - Started Eureka Server
+2025-04-01 16:40:27 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-01 16:40:27 - Updating port to 8083
+2025-04-01 16:40:27 - Started ServiceRegistryApplication in 6.487 seconds (process running for 7.332)
+2025-04-01 16:40:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01 16:40:27 - Initializing Servlet 'dispatcherServlet'
+2025-04-01 16:40:27 - Completed initialization in 2 ms
+2025-04-01 16:40:33 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-01 16:40:33 - Unregistering application SERVICE-REGISTRY with eureka with status DOWN
+2025-04-01 16:40:33 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01 16:40:33 - Graceful shutdown complete
+2025-04-01 16:40:33 - Shutting down Eureka Server..
+2025-04-01 16:40:33 - Shutting down ...
+2025-04-01 16:40:33 - Shut down
+2025-04-01 16:40:33 - Eureka Service is now shutdown...
+2025-04-01 16:40:33 - Shutting down ...
+2025-04-01 16:40:33 - Shut down
+2025-04-01 16:40:33 - Cannot clean connections
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169)
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248)
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363)
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54)
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-04-01 16:40:33 - Shutting down DiscoveryClient ...
+2025-04-01 16:40:33 - Completed shut down of DiscoveryClient
+2025-04-01 16:40:34 - Starting ServiceRegistryApplication using Java 17.0.12 with PID 13476 (C:\Yash Patel\Microservice-workspace\microservices-Architecture\service-registry\target\classes started by Patel in C:\Yash Patel\Microservice-workspace\microservices-Architecture\service-registry)
+2025-04-01 16:40:34 - No active profile set, falling back to 1 default profile: "default"
+2025-04-01 16:40:34 - Fetching config from server at : http://localhost:9999
+2025-04-01 16:40:34 - Located environment: name=service-registry, profiles=[default], label=null, version=ad5ba516fb144a617de1b89c37448b74edd4e00e, state=
+2025-04-01 16:40:34 - BeanFactory id=ce3c3471-8632-38a6-9d87-f58adc8750b4
+2025-04-01 16:40:34 - Tomcat initialized with port 8083 (http)
+2025-04-01 16:40:34 - Starting service [Tomcat]
+2025-04-01 16:40:34 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-04-01 16:40:34 - Initializing Spring embedded WebApplicationContext
+2025-04-01 16:40:34 - Root WebApplicationContext: initialization completed in 490 ms
+2025-04-01 16:40:35 - Using JSON encoding codec LegacyJacksonJson
+2025-04-01 16:40:35 - Using JSON decoding codec LegacyJacksonJson
+2025-04-01 16:40:35 - Using XML encoding codec XStreamXml
+2025-04-01 16:40:35 - Using XML decoding codec XStreamXml
+2025-04-01 16:40:35 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-04-01 16:40:35 - LiveReload server is running on port 35729
+2025-04-01 16:40:35 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-01 16:40:35 - Setting initial instance status as: STARTING
+2025-04-01 16:40:35 - Initializing Eureka in region us-east-1
+2025-04-01 16:40:35 - Client configured to neither register nor query for data.
+2025-04-01 16:40:35 - Discovery Client initialized at timestamp 1743505835643 with initial instances count: 0
+2025-04-01 16:40:35 - Initializing ...
+2025-04-01 16:40:35 - Adding new peer nodes [http://localhost:8761/eureka/]
+2025-04-01 16:40:35 - Using JSON encoding codec LegacyJacksonJson
+2025-04-01 16:40:35 - Using JSON decoding codec LegacyJacksonJson
+2025-04-01 16:40:35 - Using XML encoding codec XStreamXml
+2025-04-01 16:40:35 - Using XML decoding codec XStreamXml
+2025-04-01 16:40:35 - Replica node URL:  http://localhost:8761/eureka/
+2025-04-01 16:40:35 - Finished initializing remote region registries. All known remote regions: []
+2025-04-01 16:40:35 - Initialized
+2025-04-01 16:40:35 - Exposing 1 endpoint beneath base path '/actuator'
+2025-04-01 16:40:35 - Registering application SERVICE-REGISTRY with eureka with status UP
+2025-04-01 16:40:35 - isAws returned false
+2025-04-01 16:40:35 - Initialized server context
+2025-04-01 16:40:35 - Got 1 instances from neighboring DS node
+2025-04-01 16:40:35 - Renew threshold is: 1
+2025-04-01 16:40:35 - Changing status to UP
+2025-04-01 16:40:35 - Started Eureka Server
+2025-04-01 16:40:35 - Tomcat started on port 8083 (http) with context path '/'
+2025-04-01 16:40:35 - Updating port to 8083
+2025-04-01 16:40:35 - Started ServiceRegistryApplication in 2.425 seconds (process running for 15.793)
+2025-04-01 16:40:35 - Condition evaluation unchanged
+2025-04-01 16:40:37 - Application shutdown requested.
+2025-04-01 16:40:37 - Unregistering application SERVICE-REGISTRY with eureka with status DOWN
+2025-04-01 16:40:37 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01 16:40:38 - Graceful shutdown complete
+2025-04-01 16:40:38 - Shutting down Eureka Server..
+2025-04-01 16:40:38 - Shutting down ...
+2025-04-01 16:40:38 - Shut down
+2025-04-01 16:40:38 - Eureka Service is now shutdown...
+2025-04-01 16:40:38 - Shutting down ...
+2025-04-01 16:40:38 - Shut down
+2025-04-01 16:40:38 - Cannot clean connections
+java.lang.IllegalStateException: Client instance has been closed.
+	at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169) ~[jersey-common-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:248) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:363) ~[jersey-client-3.1.10.jar:na]
+	at org.glassfish.jersey.client.JerseyClient.getConfiguration(JerseyClient.java:54) ~[jersey-client-3.1.10.jar:na]
+	at com.netflix.discovery.shared.transport.jersey3.EurekaJersey3ClientImpl$ConnectionCleanerTask.run(EurekaJersey3ClientImpl.java:338) ~[eureka-client-jersey3-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+2025-04-01 16:40:38 - Shutting down DiscoveryClient ...
+2025-04-01 16:40:38 - Completed shut down of DiscoveryClient

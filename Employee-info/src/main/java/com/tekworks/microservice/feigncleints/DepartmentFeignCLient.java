@@ -1,12 +1,13 @@
 package com.tekworks.microservice.feigncleints;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClientProperties.FeignClientConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.tekworks.microservice.model.Department;
 
-@FeignClient("DEPARTMENT-INFO")
+@FeignClient(name="DEPARTMENT-INFO")
 public interface DepartmentFeignCLient {
 
 	

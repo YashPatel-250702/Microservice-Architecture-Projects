@@ -38,28 +38,32 @@ public class EmployeeService {
     
     
     
-    @RateLimiter(name = "userRateLimiter", fallbackMethod = "rateLimiterDepartmentAddressFallBack")
-    @CircuitBreaker(name = "departmentAddressBreaker", fallbackMethod = "departmentAddressFallBack")
-    @Retry(name = "departmentAddressRetry", fallbackMethod = "retryDepartmentAddressFallBack")
+//    @RateLimiter(name = "userRateLimiter", fallbackMethod = "rateLimiterDepartmentAddressFallBack")
+//    @CircuitBreaker(name = "departmentAddressBreaker", fallbackMethod = "departmentAddressFallBack")
+//    @Retry(name = "departmentAddressRetry", fallbackMethod = "retryDepartmentAddressFallBack")
+    
     public EmployeeResponse getEmployeeById(Integer id) throws NoEmployeeFoundException {
-        Optional<Employee> employee = employeeRepository.findById(id);
+    	
 
-        if (employee.isPresent()) {
-            Employee employeeData = employee.get();
-            
-            // Fetching department using Feign Client
-            Department department = departmentFeignCLient.getDepartmentById(employeeData.getDeptId());
-            
-            //Fetching address using deign client
-            Address address = addressFiegnClient.getAddressById(employeeData.getAddressId());
-            
-            EmployeeResponse response = new EmployeeResponse();
-            response.setEmp(employeeData);
-            response.setDept(department);
-            response.setAddress(address);
-            return response;
-        }
-        throw new NoEmployeeFoundException("No Employee Found With id: " + id);
+            Optional<Employee> employee = employeeRepository.findById(id);
+
+            if (employee.isPresent()) {
+                Employee employeeData = employee.get();
+                
+                // Fetching department using Feign Client
+                Department department = departmentFeignCLient.getDepartmentById(employeeData.getDeptId());
+                
+                //Fetching address using deign client
+                Address address = addressFiegnClient.getAddressById(employeeData.getAddressId());
+                
+                EmployeeResponse response = new EmployeeResponse();
+                response.setEmp(employeeData);
+                response.setDept(department);
+                response.setAddress(address);
+                return response;
+            }
+            throw new NoEmployeeFoundException("No Employee Found With id: " + id);
+		
     }
 
    

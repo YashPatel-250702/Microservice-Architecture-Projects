@@ -22,7 +22,9 @@ public class DepartmentService {
 	}
 	
 	public Department getDepartmentById(Integer id) {
-		Optional<Department> byId = departmentRepository.findById(id);
+		Optional<Department> byId = departmentRepository.findById(id); 
+		
+		System.out.println("Getting dpartment and returning");
 		if(!(byId.isPresent())) {
 			throw new RuntimeException("Department not found with id "+id);
 		}
