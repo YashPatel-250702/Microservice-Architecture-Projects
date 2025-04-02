@@ -32,3 +32,10 @@ spring:
 
 server:
   port: 7777
+
+eureka:
+  client:
+    service-url:
+      defaultZone: https://microservices-architecture.onrender.com/eureka
+    register-with-eureka: true
+    fetch-registry: true

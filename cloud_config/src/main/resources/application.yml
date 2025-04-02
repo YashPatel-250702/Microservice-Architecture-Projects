@@ -11,3 +11,10 @@ spring:
           uri: https://github.com/Yash-123patel/microservice-example-configuration
           clone-on-start: true
           default-label: main
+
+eureka:
+  client:
+    service-url:
+      defaultZone: https://microservices-architecture.onrender.com/eureka
+    register-with-eureka: true
+    fetch-registry: true
