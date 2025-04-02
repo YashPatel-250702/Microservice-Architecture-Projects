@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.tekworks.microservice.model.Address;
 
-@FeignClient(name="ADDRESS-INFO")
+@FeignClient(name="ADDRESS-INFO",configuration = FeignClientConfiguration.class)
 public interface AddressFiegnClient {
 	
 	@GetMapping("address/getAddressById/{id}")
