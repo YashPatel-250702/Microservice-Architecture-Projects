@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.tekworks.microservice.model.Department;
 
-@FeignClient(name="DEPARTMENT-INFO")
+@FeignClient(name="DEPARTMENT-INFO",configuration = FeignClientConfiguration.class)
 public interface DepartmentFeignCLient {
 
 	
