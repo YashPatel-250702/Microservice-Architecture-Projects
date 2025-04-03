@@ -5,37 +5,30 @@ spring:
     gateway:
       routes:
         - id: employee-info
-          uri: lb://EMPLOYEE-INFO
+          uri: https://employee-microservice-example.onrender.com
           predicates:
             - Path=/employee/**
           filters:
             - JwtAuthFilter
 
         - id: department-info
-          uri: lb://DEPARTMENT-INFO
+          uri: https://department-microservice-example.onrender.com
           predicates:
             - Path=/department/**
           filters:
             - JwtAuthFilter
 
         - id: address-info
-          uri: lb://ADDRESS-INFO
+          uri: https://address-microservice-example.onrender.com
           predicates:
             - Path=/address/**
           filters:
             - JwtAuthFilter
         
         - id: auth-service
-          uri: lb://AUTH-SERVICE
+          uri: https://auth-service-example.onrender.com
           predicates:
             - Path=/auth/**
 
 server:
-  port: 7777
-
-eureka:
-  client:
-    service-url:
-      defaultZone: https://microservices-architecture.onrender.com/eureka
-    register-with-eureka: true
-    fetch-registry: true
+  port: 8080
