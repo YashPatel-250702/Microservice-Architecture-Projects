@@ -1,11 +1,16 @@
 spring:
   application:
     name: cloud-gateway
+
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
       routes:
         - id: employee-info
-          uri: https://employee-microservice-example.onrender.com
+          uri: https://microservice-employee-service.onrender.com
           predicates:
             - Path=/employee/**
           filters:
@@ -16,7 +21,7 @@ spring:
                 fallbackUri: forward:/employeeServiceFallBack
 
         - id: department-info
-          uri: https://department-microservice-example.onrender.com
+          uri: https://microservice-department-service.onrender.com
           predicates:
             - Path=/department/**
           filters:
@@ -27,7 +32,7 @@ spring:
                 fallbackUri: forward:/departmentServiceFallBack
 
         - id: address-info
-          uri: https://address-microservice-example.onrender.com
+          uri: https://microservice-address-service.onrender.com
           predicates:
             - Path=/address/**
           filters:
@@ -38,9 +43,16 @@ spring:
                 fallbackUri: forward:/addressServiceFallBack
 
         - id: auth-service
-          uri: https://auth-service-example.onrender.com
+          uri: https://microservice-auth-service.onrender.com
           predicates:
             - Path=/auth/**
 
+eureka:
+  client:
+    service-url:
+      defaultZone: https://microservice-service-registry-qgma.onrender.com/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
 server:
-  port: 8080
+  port: 7777

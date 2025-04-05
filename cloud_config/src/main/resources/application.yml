@@ -8,13 +8,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Yash-123patel/microservice-example-configuration
+          uri: https://github.com/YashPatel-250702/Cloud-Config-Configurations
           clone-on-start: true
           default-label: main
 
 eureka:
   client:
     service-url:
-      defaultZone: https://microservices-architecture.onrender.com/eureka
+      defaultZone: https://microservice-service-registry-qgma.onrender.com/eureka
     register-with-eureka: true
     fetch-registry: true
