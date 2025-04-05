@@ -10,6 +10,10 @@ spring:
             - Path=/employee/**
           filters:
             - JwtAuthFilter
+            - name: CircuitBreaker
+              args:
+                name: EMPLOYEE-INFO
+                fallbackUri: forward:/employeeServiceFallBack
 
         - id: department-info
           uri: https://department-microservice-example.onrender.com
@@ -17,6 +21,10 @@ spring:
             - Path=/department/**
           filters:
             - JwtAuthFilter
+            - name: CircuitBreaker
+              args:
+                name: DEPARTMENT-INFO
+                fallbackUri: forward:/departmentServiceFallBack
 
         - id: address-info
           uri: https://address-microservice-example.onrender.com
@@ -24,7 +32,11 @@ spring:
             - Path=/address/**
           filters:
             - JwtAuthFilter
-        
+            - name: CircuitBreaker
+              args:
+                name: ADDRESS-INFO
+                fallbackUri: forward:/addressServiceFallBack
+
         - id: auth-service
           uri: https://auth-service-example.onrender.com
           predicates:
