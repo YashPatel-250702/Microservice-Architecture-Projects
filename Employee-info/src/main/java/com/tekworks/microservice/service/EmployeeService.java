@@ -33,8 +33,26 @@ public class EmployeeService {
 	private AddressFiegnClient addressFiegnClient;
 
 	@Transactional(rollbackForClassName = "java.lang.Exception")
-	public Employee saveEmployee(Employee employee) {
-		return employeeRepository.save(employee);
+	public Employee saveEmployee(Employee employee) throws Exception {
+		try {
+		
+			try {
+				Department department = departmentFeignCLient.getDepartmentById(employee.getDeptId());
+			} catch (Exception e) {
+				throw new Exception("Department not found with id: "+employee.getDeptId());
+			}
+			
+			
+			try {
+				Address address = addressFiegnClient.getAddressById(employee.getAddressId());
+			} catch (Exception e) {
+				throw new Exception("Address not found with id: "+employee.getAddressId());
+			}
+			
+			return employeeRepository.save(employee);
+		} catch (Exception e) {
+			 throw new Exception(e.getMessage());
+		}
 	}
 
 	@RateLimiter(name = "userRateLimiter", fallbackMethod = "retryDepartmentAddressFallBack")

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.tekworks.microservice.model.Department;
 
-@FeignClient(name = "DEPARTMENT-INFO",url="https://microservice-department-service.onrender.com", configuration = FeignClientConfiguration.class)
+@FeignClient(name = "DEPARTMENT-INFO", configuration = FeignClientConfiguration.class)
 public interface DepartmentFeignCLient {
 
 	@GetMapping("/department/getDepartmentById/{id}")

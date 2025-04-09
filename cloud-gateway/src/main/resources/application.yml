@@ -10,7 +10,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: employee-info
-          uri: https://microservice-employee-service.onrender.com
+          uri: lb://EMPLOYEE-INFO
           predicates:
             - Path=/employee/**
           filters:
@@ -21,7 +21,7 @@ spring:
                 fallbackUri: forward:/employeeServiceFallBack
 
         - id: department-info
-          uri: https://microservice-department-service.onrender.com
+          uri: lb://DEPARTMENT-INFO
           predicates:
             - Path=/department/**
           filters:
@@ -32,7 +32,7 @@ spring:
                 fallbackUri: forward:/departmentServiceFallBack
 
         - id: address-info
-          uri: https://microservice-address-service.onrender.com
+          uri: lb://ADDRESS-INFO
           predicates:
             - Path=/address/**
           filters:
@@ -43,16 +43,16 @@ spring:
                 fallbackUri: forward:/addressServiceFallBack
 
         - id: auth-service
-          uri: https://microservice-auth-service.onrender.com
+          uri: lb://AUTH-SERVICE
           predicates:
             - Path=/auth/**
 
-eureka:
-  client:
-    service-url:
-      defaultZone: https://microservice-service-registry-qgma.onrender.com/eureka
-    fetch-registry: true
-    register-with-eureka: true
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: https://microservice-service-registry-qgma.onrender.com/eureka
+#    fetch-registry: true
+#    register-with-eureka: true
 
 server:
   port: 7777

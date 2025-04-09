@@ -11,10 +11,10 @@ spring:
           uri: https://github.com/YashPatel-250702/Cloud-Config-Configurations
           clone-on-start: true
           default-label: main
-
-eureka:
-  client:
-    service-url:
-      defaultZone: https://microservice-service-registry-qgma.onrender.com/eureka
-    register-with-eureka: true
-    fetch-registry: true
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: https://microservice-service-registry-qgma.onrender.com/eureka
+#    register-with-eureka: true
+#    fetch-registry: true
