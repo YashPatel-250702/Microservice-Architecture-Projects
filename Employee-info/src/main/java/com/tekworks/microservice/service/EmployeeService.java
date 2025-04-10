@@ -1,5 +1,7 @@
 package com.tekworks.microservice.service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,6 +86,39 @@ public class EmployeeService {
 	public EmployeeResponse retryDepartmentAddressFallBack(Integer id, Exception ex) {
 		ex.printStackTrace();
 		throw new ServiceUnavailableException("Temporary issue, please try again after some time.");
+	}
+	
+	public List<EmployeeResponse> getEmployeeByDepartmnetId(Integer departmentId) throws Exception { 
+		List<EmployeeResponse> empoyeesResponse=new ArrayList<>();
+		Department department;
+		try {
+			 department = departmentFeignCLient.getDepartmentById(departmentId);
+			
+		} catch (Exception e) {
+			
+			throw new Exception("Department not found with id: "+departmentId+"\n"+e.getMessage());
+		}
+		List<Employee> employees = employeeRepository.findByDeptId(departmentId);
+		
+		if(employees.isEmpty()) {
+			throw new NoEmployeeFoundException("No Employee Found In Department");
+		}
+		
+		for(Employee emp:employees) {
+			try {
+				EmployeeResponse response=new EmployeeResponse();
+				Address address = addressFiegnClient.getAddressById(emp.getAddressId());
+				response.setEmp(emp);
+				response.setAddress(address);
+				response.setDept(department);
+				empoyeesResponse.add(response);
+			} catch (Exception e) {
+				continue;
+			}
+		}
+		return empoyeesResponse;
+		
+		
 	}
 
 }
